@@ -86,3 +86,111 @@ From the 97 original columns, key predictive features include:
    ```
 3. **Access processed data:**
    File located at: /content/drive/MyDrive/visa_data_preprocessed.csv
+
+## Milestone 2 – Exploratory Data Analysis (EDA)
+### 🎯 Objectives
+- Visualize processing time distributions across visa types and regions
+
+- Identify trends based on seasons, workload patterns, and applicant origin
+
+- Generate feature importance insights for predictive modeling
+
+### 📊 Analysis Sections
+#### 1. **Processing Time Distribution Analysis**
+- Overall Distribution: Histogram and box plot of processing days
+
+- By Visa Class: Average processing time across different visa types
+
+- By Case Status: Processing time variation by application outcome
+
+- By Employment Type: Full-time vs part-time processing differences
+
+- Statistical Analysis: Skewness, kurtosis, and descriptive statistics
+
+#### 2. **Regional Analysis**
+- Employer State Analysis: Processing time patterns across U.S. states
+
+- Worksite State Analysis: Geographic distribution of processing times
+
+- Volume vs Processing Time Correlation: Relationship between application volume and processing speed
+
+- Top/Bottom Performing States: Identification of fastest and slowest processing regions
+
+- Geographic Heatmaps: Visual representation of state-wise processing times
+
+#### 3. **Seasonal Trend Analysis**
+- Monthly Trends: Processing time patterns throughout the year
+
+- Seasonal Variations: Winter, Spring, Summer, Fall comparisons
+
+- Application Volume Seasonality: Busiest and slowest application periods
+
+- Year-over-Year Comparisons: Temporal evolution of processing times
+
+- Heatmap Visualizations: Month vs Year processing time matrix
+
+#### 4. **Workload and Processing Center Analysis**
+- Weekly Workload Patterns: Application volume trends by week
+
+- Workload vs Processing Time Correlation: Impact of application volume on processing speed
+
+- Industry Analysis (NAICS_CODE): Processing time variations across industries
+
+- Job Title Analysis (SOC_TITLE): Occupation-specific processing patterns
+
+- Temporal Workload Distribution: Peak and off-peak application periods
+
+#### 5. **Feature Importance Analysis**
+- Correlation Analysis: Feature relationships with processing days
+
+- Top Predictive Features: Identification of most influential variables
+
+- Correlation Heatmaps: Visual matrix of feature relationships
+
+- Feature Ranking: Ordered list of features by predictive power
+
+- Categorical Feature Impact: Analysis of text variables on processing times
+
+#### 6. **Statistical Insights**
+- Processing Time Statistics: Median, mean, and distribution analysis
+
+- Seasonal Performance: Fastest vs slowest processing seasons
+
+- Visa Class Performance: Processing time variations by visa type
+
+- Regional Performance: State-wise processing efficiency
+
+- Case Status Impact: Processing time differences by application outcome
+
+### 📈 Key Visualizations Generated
+- Distribution Plots: Processing time histograms and box plots
+
+- Bar Charts: Visa class, case status, and employment type comparisons
+
+- Scatter Plots: Workload vs processing time correlations
+
+- Heatmaps: Geographic and temporal processing patterns
+
+- Line Charts: Monthly and seasonal trend analysis
+
+- Correlation Matrices: Feature relationship visualizations
+
+### 🔍 Key Findings
+- Seasonal Patterns: Identification of fastest/slowest processing seasons
+
+- Geographic Variations: State-wise processing time differences
+
+- Visa Type Impact: Significant variations across visa categories
+
+- Workload Effects: Correlation between application volume and processing time
+
+- Feature Importance: Most predictive variables for modeling
+
+### 📁 EDA Outputs
+- Statistical Summary: Descriptive statistics and insights
+
+- Visualization Gallery: 5 comprehensive analysis figures
+
+- Feature Correlation Matrix: Relationship analysis for modeling
+
+- Insights Report: Automated generation of key findings
