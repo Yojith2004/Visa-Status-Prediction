@@ -194,3 +194,96 @@ From the 97 original columns, key predictive features include:
 - Feature Correlation Matrix: Relationship analysis for modeling
 
 - Insights Report: Automated generation of key findings
+
+## Milestone 3 – Predictive Modeling
+
+### 🎯 Objectives Achieved
+- Developed and tested multiple regression models for processing time prediction
+- Evaluated model performance using MAE, RMSE, R², and MAPE metrics
+- Selected the best performing model based on comprehensive evaluation
+- Saved model artifacts for deployment and future use
+
+### 📊 Model Development Pipeline
+
+#### **1. Feature Selection & Engineering**
+- **Selected Features**: 15+ key features based on EDA insights including:
+  - **Core Features**: VISA_CLASS, CASE_STATUS, FULL_TIME_POSITION
+  - **Geographic Features**: EMPLOYER_STATE, WORKSITE_STATE
+  - **Temporal Features**: application_year, application_month, application_season, application_weekday
+  - **Job-Related**: JOB_TITLE, SOC_TITLE, TOTAL_WORKER_POSITIONS
+  - **Wage-Related**: WAGE_RATE_OF_PAY_FROM, WAGE_UNIT_OF_PAY, PREVAILING_WAGE, PW_UNIT_OF_PAY
+  - **Company Features**: NAICS_CODE, H_1B_DEPENDENT, WILLFUL_VIOLATOR
+
+- **Data Preprocessing**:
+  - **High Cardinality Handling**: Limited categorical features to top 20 categories
+  - **Numerical Pipeline**: Median imputation + Standard scaling
+  - **Categorical Pipeline**: Mode imputation + One-hot encoding
+  - **Column Transformer**: Combined preprocessing for mixed data types
+
+#### **2. Model Training & Evaluation**
+- **Models Evaluated**:
+  1. Linear Regression (Baseline)
+  2. Ridge Regression (L2 regularization)
+  3. Lasso Regression (L1 regularization)
+  4. Decision Tree Regressor
+  5. Random Forest Regressor (Ensemble)
+  6. Gradient Boosting Regressor
+  7. XGBoost Regressor (Advanced ensemble)
+
+- **Evaluation Metrics**:
+  - **RMSE (Root Mean Square Error)**: Penalizes large errors more heavily
+  - **MAE (Mean Absolute Error)**: Average absolute prediction error
+  - **R² Score**: Proportion of variance explained (0-1 scale)
+  - **MAPE (Mean Absolute Percentage Error)**: Percentage error relative to actual values
+  - **Training Time**: Computational efficiency consideration
+
+#### **3. Model Selection Process**
+- **Primary Selection Criterion**: Lowest Test RMSE
+- **Secondary Criteria**: MAE, R², Training Time, Overfitting Gap
+- **Train-Test Split**: 80% training, 20% testing with random shuffling
+- **Performance Visualization**: Comprehensive comparison charts
+
+#### **Key Findings from Your Implementation**:
+1. **Best Performing Model**: Random Forest typically outperforms others for this type of data
+2. **Tree-based Models**: Generally show better performance due to non-linear relationships
+3. **Ensemble Methods**: Random Forest and XGBoost provide robust predictions
+4. **Linear Models**: Serve as useful baselines but may underperform with complex patterns
+
+### 🔍 Model Analysis Features
+
+#### **1. Feature Importance Analysis**
+For tree-based models (Random Forest, XGBoost, Gradient Boosting, Decision Tree):
+- Top 15 most important features visualization
+- Quantitative importance scores
+- Insights into which factors most affect processing time
+
+#### **2. Overfitting Analysis**
+- Comparison of Train vs Test R² scores
+- Gap analysis: Train_R² - Test_R²
+- Warning for potential overfitting (gap > 0.1)
+
+#### **3. Error Analysis**
+- **Actual vs Predicted Scatter Plot**: Visual accuracy assessment
+- **Residual Plot**: Error patterns identification
+- **Error Distribution Histogram**: Statistical error analysis
+- **Prediction Error vs Actual Value**: Error magnitude trends
+
+#### **4. Business Impact Analysis**
+- **Visa Class Error Analysis**: Performance breakdown by visa type
+- **Accuracy Metrics**: Percentage accuracy relative to mean processing time
+- **Practical Implications**: Real-world applicability assessment
+
+### 📁 Outputs Generated
+
+#### **Model Artifacts Saved**:
+1. **Trained Model**: `visa_processing_model_Random_Forest.pkl`
+
+2. **Preprocessor**: `visa_preprocessor.pkl`
+   - Separate preprocessing pipeline
+   - Useful for data transformation consistency
+
+3. **Feature Configuration**: `visa_features.pkl`
+   - List of features used in training
+   - Ensures prediction-time feature compatibility
+
+4. **Model Summary**: `model_summary.json`
