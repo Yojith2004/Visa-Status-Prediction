@@ -9,5 +9,4 @@ xgboost
 matplotlib
 seaborn
 python-dotenv
-streamlit
-altair<5
+streamlit>=1.40.0
