@@ -287,3 +287,41 @@ For tree-based models (Random Forest, XGBoost, Gradient Boosting, Decision Tree)
    - Ensures prediction-time feature compatibility
 
 4. **Model Summary**: `model_summary.json`
+
+## Milestone 4 – Web App Development & Deployment
+
+### 🎯 Objectives Achieved
+- Developed a user-friendly Flask-based web application.
+- Created a Streamlit application for easier cloud deployment.
+- Deployed the application to Streamlit Cloud for public access.
+- Implemented real-time prediction and categorization capabilities.
+
+### 🚀 Application Features
+
+#### 1. **Interactive Web Interface**
+- **User Input Form**: Simple form to input visa application details.
+- **Dynamic Dropdowns**: Pre-populated with values from the training data (e.g., Visa Class, States).
+- **Compliance Checks**: Options for H-1B Dependent and Willful Violator status.
+
+#### 2. **Real-time Prediction**
+- **Processing Time Estimation**: Instant prediction of processing days.
+- **Processing Speed Categorization**: 
+  - 🚀 **Fast**: < 30 days
+  - ⏳ **Average**: 30-90 days
+  - 🐢 **Slow**: > 90 days
+- **Time Conversions**: Displays results in days, weeks, and months.
+
+#### 3. **Deployment Strategy**
+- **Platform**: Streamlit Cloud
+- **Model Optimization**: Compressed the 82MB model to ~15MB using joblib for efficient cloud deployment.
+- **Version Control**: Integrated with GitHub for continuous deployment.
+- **Compatibility**: Configured for Python 3.13 environment.
+
+### 📁 Key Files Created
+- `src/app.py`: Core Flask application logic.
+- `src/streamlit_app.py`: Streamlit-based interface for cloud deployment.
+- `src/visa_model_compressed.joblib`: Optimized machine learning model.
+- `src/requirements.txt`: Updated dependencies for deployment.
+
+### 🌐 Live Demo
+The application is deployed and accessible online. Users can input their application details to get an estimated processing time based on historical trends.
