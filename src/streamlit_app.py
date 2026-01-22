@@ -67,7 +67,9 @@ class VisaPredictor:
         if os.path.exists(self.MODEL_PATH):
             self.model = joblib.load(self.MODEL_PATH)
         else:
+            files_in_dir = os.listdir(os.path.dirname(self.MODEL_PATH))
             st.error(f"Model file not found: {self.MODEL_PATH}")
+            st.error(f"Files in directory: {files_in_dir}")
             self.model = None
         
         # Load preprocessor
