@@ -1,0 +1,12 @@
+Flask
+Werkzeug
+Jinja2
+scikit-learn
+pandas
+numpy
+joblib
+xgboost
+matplotlib
+seaborn
+python-dotenv
+streamlit
