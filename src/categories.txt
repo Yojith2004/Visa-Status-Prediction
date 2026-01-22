@@ -1,0 +1,80 @@
+--- Model Categorical Features ---
+Feature Index 0
+  Valid Categories (4):
+  ['E-3 Australian' 'H-1B' 'H-1B1 Chile' 'H-1B1 Singapore']
+  -> NO 'Other' category
+
+Feature Index 1
+  Valid Categories (1):
+  ['Certified']
+  -> NO 'Other' category
+
+Feature Index 2
+  Valid Categories (2):
+  ['N' 'Y']
+  -> NO 'Other' category
+
+Feature Index 3
+  Valid Categories (21):
+  ['AR' 'AZ' 'CA' 'FL' 'GA' 'IL' 'MA' 'MD' 'MI' 'MN' 'MO' 'NC' 'NJ' 'NY'
+ 'OH' 'Other' 'PA' 'TN' 'TX' 'VA' 'WA']
+  -> Has 'Other' category
+
+Feature Index 4
+  Valid Categories (21):
+  ['AZ' 'CA' 'CO' 'FL' 'GA' 'IL' 'MA' 'MD' 'MI' 'MN' 'MO' 'NC' 'NJ' 'NY'
+ 'OH' 'Other' 'PA' 'TN' 'TX' 'VA' 'WA']
+  -> Has 'Other' category
+
+Feature Index 5
+  Valid Categories (2):
+  ['Fall' 'Winter']
+  -> NO 'Other' category
+
+Feature Index 6
+  Valid Categories (21):
+  ['Architect' 'Assistant Professor' 'Associate' 'Data Engineer'
+ 'Data Scientist' 'Manager'
+ 'Manager JC50 - Computer Systems Engineers/Architects' 'Other'
+ 'Product Manager' 'Research Scientist' 'SOFTWARE DEVELOPER'
+ 'SOFTWARE ENGINEER' 'Senior Software Engineer' 'Software Developer'
+ 'Software Development Engineer' 'Software Development Engineer I'
+ 'Software Development Engineer II' 'Software Engineer'
+ 'Staff Software Engineer' 'Technology Lead - US' 'Vice President']
+  -> Has 'Other' category
+
+Feature Index 7
+  Valid Categories (21):
+  ['Accountants and Auditors' 'Business Intelligence Analysts'
+ 'Computer Programmers' 'Computer Systems Analysts'
+ 'Computer Systems Engineers/Architects'
+ 'Computer and Information Systems Managers' 'Data Scientists'
+ 'Database Administrators' 'Electrical Engineers'
+ 'Electronics Engineers, Except Computer'
+ 'Financial and Investment Analysts' 'Information Security Analysts'
+ 'Information Technology Project Managers' 'Management Analysts'
+ 'Mechanical Engineers' 'Medical Scientists, Except Epidemiologists'
+ 'Operations Research Analysts' 'Other' 'Software Developers'
+ 'Software Quality Assurance Analysts and Testers' 'Statisticians']
+  -> Has 'Other' category
+
+Feature Index 8
+  Valid Categories (5):
+  ['Bi-Weekly' 'Hour' 'Month' 'Week' 'Year']
+  -> NO 'Other' category
+
+Feature Index 9
+  Valid Categories (5):
+  ['Bi-Weekly' 'Hour' 'Month' 'Week' 'Year']
+  -> NO 'Other' category
+
+Feature Index 10
+  Valid Categories (2):
+  ['No' 'Yes']
+  -> NO 'Other' category
+
+Feature Index 11
+  Valid Categories (2):
+  ['No' 'Yes']
+  -> NO 'Other' category
+

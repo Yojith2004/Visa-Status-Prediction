@@ -1,0 +1,24 @@
+Initializing Predictor...
+Loading model artifacts...
+Model loaded from C:\Users\HP\Documents\GitHub\Visa-Status-Prediction\src\visa_processing_model_Random_Forest.pkl
+Preprocessor loaded from visa_preprocessor.pkl
+Features loaded from visa_features.pkl
+Model summary loaded from model_summary.json
+Visa Predictor initialized successfully!
+
+--- Starting Tests ---
+
+Test 1: {'visa_class': 'H-1B', 'employer_state': 'CA', 'worksite_state': 'CA', 'job_title': 'Software Engineer', 'wage_from': '120000', 'wage_unit': 'Year', 'full_time': 'Y', 'test_desc': 'Standard H-1B Tech'}
+Prepared Input Keys: ['VISA_CLASS', 'CASE_STATUS', 'FULL_TIME_POSITION', 'EMPLOYER_STATE', 'WORKSITE_STATE', 'JOB_TITLE', 'SOC_TITLE', 'TOTAL_WORKER_POSITIONS', 'WAGE_RATE_OF_PAY_FROM', 'WAGE_UNIT_OF_PAY', 'PREVAILING_WAGE', 'PW_UNIT_OF_PAY', 'NAICS_CODE', 'H_1B_DEPENDENT', 'WILLFUL_VIOLATOR', 'application_year', 'application_month', 'application_day', 'application_weekday', 'application_season']
+Result Days: 7.2
+------------------------------
+
+Test 2: {'visa_class': 'H-1B1 Singapore', 'employer_state': 'CA', 'worksite_state': 'CA', 'job_title': 'Data Analyst', 'wage_from': '85000', 'wage_unit': 'Year', 'full_time': 'Y', 'test_desc': 'H-1B1 Singapore (Expected ~22 days)'}
+Prepared Input Keys: ['VISA_CLASS', 'CASE_STATUS', 'FULL_TIME_POSITION', 'EMPLOYER_STATE', 'WORKSITE_STATE', 'JOB_TITLE', 'SOC_TITLE', 'TOTAL_WORKER_POSITIONS', 'WAGE_RATE_OF_PAY_FROM', 'WAGE_UNIT_OF_PAY', 'PREVAILING_WAGE', 'PW_UNIT_OF_PAY', 'NAICS_CODE', 'H_1B_DEPENDENT', 'WILLFUL_VIOLATOR', 'application_year', 'application_month', 'application_day', 'application_weekday', 'application_season']
+Result Days: 7.2
+------------------------------
+
+Test 3: {'visa_class': 'E-3 Australian', 'employer_state': 'NY', 'worksite_state': 'NY', 'job_title': 'Manager', 'wage_from': '150000', 'wage_unit': 'Year', 'full_time': 'Y', 'test_desc': 'E-3 Australian'}
+Prepared Input Keys: ['VISA_CLASS', 'CASE_STATUS', 'FULL_TIME_POSITION', 'EMPLOYER_STATE', 'WORKSITE_STATE', 'JOB_TITLE', 'SOC_TITLE', 'TOTAL_WORKER_POSITIONS', 'WAGE_RATE_OF_PAY_FROM', 'WAGE_UNIT_OF_PAY', 'PREVAILING_WAGE', 'PW_UNIT_OF_PAY', 'NAICS_CODE', 'H_1B_DEPENDENT', 'WILLFUL_VIOLATOR', 'application_year', 'application_month', 'application_day', 'application_weekday', 'application_season']
+Result Days: 7.2
+------------------------------

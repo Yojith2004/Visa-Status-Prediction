@@ -1,31 +1,8 @@
 {
-  "model_name": "Random Forest",
-  "test_rmse": 16.1495318480497,
-  "test_mae": 2.62390136151491,
-  "test_r2": 0.9891886737989062,
-  "training_samples": 712294,
-  "testing_samples": 178074,
-  "features_used": [
-    "VISA_CLASS",
-    "CASE_STATUS",
-    "FULL_TIME_POSITION",
-    "EMPLOYER_STATE",
-    "WORKSITE_STATE",
-    "application_year",
-    "application_month",
-    "application_season",
-    "application_weekday",
-    "JOB_TITLE",
-    "SOC_TITLE",
-    "TOTAL_WORKER_POSITIONS",
-    "WAGE_RATE_OF_PAY_FROM",
-    "WAGE_UNIT_OF_PAY",
-    "PREVAILING_WAGE",
-    "PW_UNIT_OF_PAY",
-    "NAICS_CODE",
-    "H_1B_DEPENDENT",
-    "WILLFUL_VIOLATOR",
-    "processing_days"
-  ],
-  "timestamp": "2026-01-06 08:09:52"
+  "model_name": "Random Forest (Retrained)",
+  "test_rmse": 20.604831129996764,
+  "test_mae": 3.826401024893588,
+  "test_r2": 0.9765661870017943,
+  "training_samples": 39800,
+  "timestamp": "2026-01-07 17:10:19"
 }
