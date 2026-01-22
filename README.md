@@ -1,4 +1,7 @@
 # AI Enabled Visa Status Prediction & Processing Time Estimator
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://yojith-visa-status-prediction.streamlit.app/)
+> **🔴 Live Demo:** [Click here to use the App](https://yojith-visa-status-prediction.streamlit.app/)
 ## Milestone 1 – Data Collection & Preprocessing
 
 ### 📊 Dataset
