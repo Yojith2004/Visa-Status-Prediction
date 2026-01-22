@@ -48,7 +48,7 @@ class VisaPredictor:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         
         # Define paths relative to the script directory
-        self.MODEL_PATH = os.path.join(current_dir, 'visa_processing_model_Random_Forest.pkl')
+        self.MODEL_PATH = os.path.join(current_dir, 'visa_model_compressed.joblib')
         self.PREPROCESSOR_PATH = os.path.join(current_dir, 'visa_preprocessor.pkl')
         self.FEATURES_PATH = os.path.join(current_dir, 'visa_features.pkl')
         self.SUMMARY_PATH = os.path.join(current_dir, 'model_summary.json')
