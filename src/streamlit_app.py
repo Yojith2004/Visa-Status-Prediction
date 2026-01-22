@@ -9,10 +9,18 @@ from datetime import datetime
 
 # Set page configuration
 st.set_page_config(
-    page_title="Visa Processing Time Predictor",
+    page_title="Visa Processing Time Predictor (v1.1 DEBUG)",
     page_icon="📅",
     layout="wide"
 )
+
+# DEBUG: List files deeply
+st.error(f"DEBUG INFO - Current Directory: {os.getcwd()}")
+st.error(f"DEBUG INFO - Script Directory: {os.path.dirname(os.path.abspath(__file__))}")
+try:
+    st.error(f"DEBUG INFO - Files in src: {os.listdir(os.path.dirname(os.path.abspath(__file__)))}")
+except Exception as e:
+    st.error(f"DEBUG INFO - Error listing dir: {e}")
 
 # Custom CSS for better styling
 st.markdown("""
