@@ -2,4 +2,4 @@
 data/visa_data_preprocessed.csv
 
 # Ignore trained ML model
-src/visa_processing_model_Random_Forest.pkl
+
